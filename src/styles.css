@@ -1,0 +1,544 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #4CAF50;
+}
+
+/* Navbar */
+nav {
+    background-color: #dfe1ce;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container for Main Content */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.admin-div{
+    text-align: center;
+}
+.farmer-div{
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Product List Styles */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: rgb(9, 141, 153);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #67a6de92;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard h3 {
+    margin-bottom: 20px;
+}
+
+/* Product Details Styles */
+.product-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+    margin-bottom: 10px;
+}
+
+/* Error/Feedback Messages */
+.error {
+    color: red;
+    margin: 10px 0;
+}
+
+.success {
+    color: green;
+    margin: 10px 0;
+}
+
+/* Login.css */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .input-field {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-prompt {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+/* Register.css */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .input-field,
+  .input-select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field:focus,
+  .input-select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-prompt {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+  .footer {
+    background-color: #f8f8f8; /* Light background for footer */
+    padding: 20px; /* Space inside footer */
+    text-align: center; /* Center-align text */
+    position: relative; /* Allow footer to be positioned at the bottom */
+    bottom: 0; /* Position at the bottom of the page */
+    width: 100%; /* Full width */
+  }
+  
+  .contact-details {
+    margin-top: 20px; /* Space above contact details */
+  }
+  
+  .contact-details h2 {
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .contact-details p {
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  .middle-image {
+    display: block;          /* Center the image */
+    margin: 20px auto;      /* Center the image and add space above/below */
+    max-width: 80%;         /* Set a maximum width of 80% of its container */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 8px;     /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+  }
+  
+  .landing-div{
+    background-color: rgb(21, 45, 53);
+  }
+
+  .landing-page {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh; /* Make the landing page take at least the full height of the viewport */
+    background: rgb(95, 153, 173); /* Light blue gradient background */
+    padding: 20px;
+  }
+  
+  .middle-image {
+    display: block;
+    margin: 10px auto;
+    max-width: 70%;
+    height: auto; /* Set a maximum width of 80% of its container */
+     /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border: 5px solid #2196f3; /* Blue border around the image */
+  }
+  
+  .landing-title {
+    color: #f0f5fb; /* Title color */
+    text-align: center; /* Center the title */
+  }
+  
+  .landing-description {
+    text-align: center; /* Center the description */
+    color: #424242; /* Text color */
+  }
+  
+  .landing-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin: 20px 0; /* Margin for spacing */
+  }
+  
+  .landing-button {
+    background-color: #2196f3; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 0 10px; /* Margin between buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .landing-button:hover {
+    background-color: #1976d2; /* Darker shade on hover */
+  }
+  
+  .footer {
+    background-color: #e1f5fe; /* Footer background color */
+    padding: 20px; /* Padding for the footer */
+    text-align: center; /* Center footer text */
+  }
+  
+
+  /* Overall layout and styling */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure content fills viewport */
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Base font */
+  background-color: #f5f5f5; /* Light background */
+}
+
+/* Header section */
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dashboard-description {
+  font-size: 16px;
+  color: #888; /* Light gray for description */
+  margin-bottom: 20px;
+}
+
+/* User form section */
+.form-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff; /* White form background */
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+}
+
+/* Users list section */
+.users-list-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer; /* Enable hover interaction for user items */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.user-item:hover {
+  background-color: #eee; /* Light gray on hover */
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex: 1; /* Allow user info to expand */
+}
+
+.user-actions {
+  display: flex;
+}
+
+.edit-button,
+.delete-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.edit-button {
+  color: #007bff; /* Blue for edit */
+}
+
+.delete-button {
+  color: #dc3545; /* Red for delete */
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  color: #666; /* Darker color on hover */
+}

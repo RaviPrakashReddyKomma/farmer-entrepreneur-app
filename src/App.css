@@ -1,38 +1,389 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+  margin: 20px 0;
+}
+
+.product-list ul {
+  list-style-type: none;
+}
+
+.product-list li {
+  background-color: #6fc5d1;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.product-list button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.product-list button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cart Section */
+.cart {
+  margin-top: 30px;
+}
+
+.cart ul {
+  list-style-type: none;
+}
+
+.cart li {
+  background-color: #ffe0b2;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart button:hover {
+  background-color: #e53935;
+}
+
+/* Checkout Button */
+button.checkout {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.checkout:hover {
+  background-color: #1976D2;
+}
+
+/* Form Styles */
+form {
+  margin: 20px 0;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+/* Register.css */
+.register-container {
+  max-width: 400px; /* Set a maximum width for the container */
+  margin: 40px auto; /* Center the container */
+  padding: 20px; /* Add padding around the container */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center all text in the container */
+}
+
+.register-title {
+  font-size: 24px; /* Title size */
+  margin-bottom: 20px; /* Space below title */
+  color: #333; /* Dark text color */
+}
+
+.register-form {
+  display: flex; /* Use flexbox for form layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Space between input groups */
+}
+
+.input-label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px; /* Space below labels */
+  color: #555; /* Lighter text color */
+}
+
+.input-field,
+.input-select {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.input-field:focus,
+.input-select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-prompt {
+  margin-top: 15px; /* Space above login prompt */
+  color: #777; /* Light color for prompt */
+}
+
+
+/* LandingPage.css */
+
+.landing-page {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 80vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding around the content */
+}
+
+.landing-title {
+  font-size: 34px; /* Large title font size */
+  margin-bottom: 15px; /* Space below the title */
+  color: #333; /* Dark text color */
+}
+
+.landing-description {
+  font-size: 18px; /* Medium description font size */
+  margin-bottom: 30px; /* Space below the description */
+  color: #555; /* Lighter text color */
+}
+
+.landing-buttons {
+  display: flex; /* Use flexbox for button layout */
+  gap: 20px; /* Space between buttons */
+}
+
+.landing-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.landing-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* General Styles */
+.admin-dashboard {
+  max-width: 800px; /* Set a maximum width for the dashboard */
+  margin: 20px auto; /* Center the dashboard */
+  padding: 20px; /* Padding around the dashboard */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.dashboard-title {
+  font-size: 24px; /* Title font size */
+  color: #333; /* Darker text color */
+  margin-bottom: 10px; /* Margin below the title */
+  text-align: center; /* Center the title */
+}
+
+.dashboard-description {
+  font-size: 16px; /* Description font size */
+  color: #555; /* Lighter text color */
+  text-align: center; /* Center the description */
+  margin-bottom: 20px; /* Margin below the description */
+}
+
+/* Form Styles */
+.form-title {
+  font-size: 20px; /* Form title font size */
+  color: #1976d2; /* Blue color for the form title */
+  margin: 20px 0 10px; /* Margin above and below the form title */
+  text-align: center; /* Center the form title */
+}
+
+.user-form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 15px; /* Space between form elements */
+  margin-bottom: 20px; /* Margin below the form */
+}
+
+.form-group {
+  display: flex; /* Use flexbox for each form group */
+  flex-direction: column; /* Arrange label and input vertically */
+}
+
+.form-label {
+  font-size: 14px; /* Label font size */
+  color: #333; /* Label text color */
+  margin-bottom: 5px; /* Margin below the label */
+}
+
+.form-input,
+.form-select {
+  padding: 10px; /* Padding inside input/select */
+  font-size: 16px; /* Font size for input/select */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.submit-button {
+  padding: 10px; /* Padding for the button */
+  background-color: #1976d2; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size for button */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.submit-button:hover {
+  background-color: #1565c0; /* Darker shade on hover */
+}
+
+/* Users List Styles */
+.users-list-title {
+  font-size: 20px; /* Title for users list */
+  color: #333; /* Darker text color */
+  margin-top: 30px; /* Margin above the title */
+  text-align: center; /* Center the title */
+}
+
+.user-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+.user-item {
+  display: flex; /* Use flexbox for user item layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+  padding: 10px; /* Padding for user item */
+  border-bottom: 1px solid #ccc; /* Border below each item */
+}
+
+.user-avatar {
+  border-radius: 50%; /* Circular avatar */
+  width: 50px; /* Width of avatar */
+  height: 50px; /* Height of avatar */
+}
+
+.user-info {
+  flex-grow: 1; /* Allow user info to grow */
+  margin-left: 10px; /* Space between avatar and info */
+  color: #333; /* Darker text color */
+}
+
+.user-actions {
+  display: flex; /* Use flexbox for actions layout */
+  gap: 10px; /* Space between action buttons */
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px; /* Padding for action buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 14px; /* Font size for action buttons */
+}
+
+.edit-button {
+  background-color: #ffa726; /* Orange color for edit button */
+  color: white; /* Text color */
+}
+
+.edit-button:hover {
+  background-color: #fb8c00; /* Darker orange on hover */
+}
+
+.delete-button {
+  background-color: #e53935; /* Red color for delete button */
+  color: white; /* Text color */
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
 }

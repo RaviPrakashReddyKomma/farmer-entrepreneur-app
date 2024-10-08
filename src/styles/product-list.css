@@ -1,0 +1,17 @@
+/* product-list.css */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: rgb(9, 141, 153);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #67a6de92;
+}
